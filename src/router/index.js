@@ -12,7 +12,27 @@ const router = createRouter({
       {
         path: '/home',
         name: 'home',
-        component: () => import('@/views/Home')
+        component: () => import('@/views/main/Home')
+      },
+      {
+        path: '/admin',
+        name: 'admin',
+        component: () => import('@/views/admin/Admin')
+      },
+      {
+        path: '/login',
+        name: 'login',
+        component: () => import('@/views/user/Login')
+      },
+      {
+        path: '/register',
+        name: 'register',
+        component: () => import('@/views/user/Register')
+      },
+      {
+        path: '/creativeCenter',
+        name: 'creativeCenter',
+        component: () => import('@/views/user/CreativeCenter')
       },
     ]
 })
